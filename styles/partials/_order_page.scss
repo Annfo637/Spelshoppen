@@ -1,0 +1,196 @@
+//styling för mobil
+@media (max-width: 500px) {
+  .shopping_container {
+    min-height: 300px;
+  }
+  .product-head {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  #emptyCartText {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  .table_container {
+    min-width: 280px;
+    @media (min-width: 600px) {
+      min-width: 400px;
+    }
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  th {
+    padding: 2%;
+    font-size: 18px;
+  }
+
+  tr {
+    margin: 0 0 1rem 0;
+    padding: 5px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+  }
+
+  tr:nth-child(odd) {
+    background: rgb(235, 235, 235);
+  }
+
+  td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  td:before {
+    position: absolute;
+    top: 0;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  td:nth-of-type(1):before {
+    content: "Produkt";
+    padding: 5%;
+    font-weight: 700;
+  }
+  td:nth-of-type(2):before {
+    content: "Pris/st";
+    padding: 5%;
+    font-weight: 700;
+  }
+  td:nth-of-type(3):before {
+    content: "Ta bort";
+    padding: 5%;
+    font-weight: 700;
+  }
+  td:nth-of-type(4):before {
+    content: "Antal";
+    padding: 5%;
+    font-weight: 700;
+  }
+
+  .minusQty,
+  .plusQty {
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    background: peachpuff;
+    text-transform: uppercase;
+  }
+
+  .delete {
+    padding: 5px 10px;
+    font-size: 13px;
+    background-color: #852db8;
+    text-transform: uppercase;
+  }
+
+  .delete a {
+    color: white;
+  }
+}
+
+// Styling för desktop
+@media (min-width: 500px) {
+  .shopping_container {
+    min-height: 400px;
+  }
+  #emptyCartText {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .table_orders {
+    min-width: 650px;
+    margin-bottom: 5%;
+    @media (min-width: 800px) {
+      min-width: 800px;
+    }
+  }
+  .orders-head {
+    font-size: 46px;
+    text-align: center;
+    //padding: 0 10% 10% 10%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .table_orders-head {
+    font-size: 34px;
+    padding-bottom: 2%;
+    padding-top: 2%;
+  }
+
+  tr {
+    padding: 5%;
+  }
+
+  td {
+    width: 200px;
+    font-size: 18px;
+    padding: 2%;
+  }
+
+  .delete {
+    margin-left: 15px;
+    background-color: #852db8;
+    text-transform: uppercase;
+    cursor: pointer;
+    @media (min-width: 700px) {
+      margin-left: 0;
+    }
+    @media (min-width: 800px) {
+      margin-left: 30px;
+    }
+  }
+
+  .minusQty,
+  .plusQty {
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    font-size: 13px;
+    background: peachpuff;
+    text-transform: uppercase;
+  }
+
+  .delete {
+    color: #ffffff;
+  }
+
+  tr:nth-child(odd) {
+    background: rgb(235, 235, 235);
+  }
+
+  .back_btn,
+  .btn-add-product {
+    background: peachpuff;
+    text-transform: uppercase;
+  }
+
+  .order-container {
+    padding: 5%;
+  }
+}

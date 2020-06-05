@@ -1,0 +1,194 @@
+//styling för mobil
+@media (max-width: 500px) {
+  .category-head {
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  .table_container {
+    min-width: 280px;
+    @media (min-width: 600px) {
+      min-width: 400px;
+    }
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  th {
+    padding: 2%;
+    font-size: 18px;
+    @media (min-width: 1000px) {
+      font-size: 36px;
+    }
+  }
+
+  tr {
+    margin: 0 0 1rem 0;
+    padding: 5px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+  }
+
+  tr:nth-child(odd) {
+    background: rgb(235, 235, 235);
+  }
+
+  td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  td:before {
+    position: absolute;
+
+    top: 0;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  .table_category-cell:nth-of-type(1):before {
+    content: "Kategori";
+    padding: 5%;
+    font-weight: 700;
+  }
+  .table_category-cell:nth-of-type(2):before {
+    content: "Redigera";
+    padding: 5%;
+    font-weight: 700;
+  }
+
+  .btn_update-category {
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    background: peachpuff;
+    text-transform: uppercase;
+  }
+
+  .btn_delete-category {
+    padding: 5px 10px;
+    font-size: 13px;
+    background: peachpuff;
+    text-transform: uppercase;
+  }
+
+  .btn_update-category,
+  .btn_delete-category a {
+    color: #212121;
+  }
+  .back_btn,
+  .btn-add-category {
+    background: peachpuff;
+    text-transform: uppercase;
+  }
+}
+
+// Styling för desktop
+@media (min-width: 500px) {
+  .table_categories-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .table_categories {
+    min-width: 650px;
+    margin-bottom: 5%;
+    @media (min-width: 800px) {
+      min-width: 800px;
+    }
+  }
+  .category-head {
+    font-size: 46px;
+    text-align: center;
+    padding: 0 10% 10% 10%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .table_category-head {
+    font-size: 34px;
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+
+  tr {
+    padding: 5%;
+  }
+
+  .table_category-cell {
+    width: 200px;
+    font-size: 18px;
+    padding: 2%;
+    text-transform: uppercase;
+    border-radius: 3px;
+  }
+  .table_category-head {
+    padding-right: 30px;
+  }
+
+  .btn_update-category,
+  .btn_delete-category {
+    margin-left: 15px;
+    background: peachpuff;
+    text-transform: uppercase;
+    @media (min-width: 700px) {
+      margin-left: 30px;
+    }
+    @media (min-width: 800px) {
+      margin-left: 50px;
+    }
+  }
+
+  .btn_delete-category {
+    background: #ffe4e1;
+  }
+
+  .btn_delete-category a {
+    color: #212121;
+  }
+
+  tr:nth-child(odd) {
+    background: rgb(235, 235, 235);
+  }
+  .category_img-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+  }
+  .category_img-wrapper {
+    margin: 0 10px 0 10px;
+  }
+
+  .category_img-head {
+    text-align: center;
+    font-size: 36px;
+  }
+
+  .back_btn,
+  .btn-add-category {
+    background: peachpuff;
+    text-transform: uppercase;
+  }
+}

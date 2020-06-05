@@ -1,0 +1,31 @@
+/*importera partials, fonter, variabler, mixins, extends etc. */
+
+//Fonter
+@import url("https://fonts.googleapis.com/css2?family=Kulim+Park:wght@400;700&display=swap");
+
+//Övergripande CSS som gäller alla sidor
+@import "base/base";
+
+@import "variables/variables";
+@import "mixins/mixins";
+@import "extends/extends";
+@import "partials/hero";
+@import "partials/header_extern";
+@import "partials/footer";
+@import "partials/forms";
+@import "partials/frontpage";
+@import "partials/categorypage";
+@import "partials/searchpage";
+@import "partials/admin_menu";
+@import "partials/admin_home";
+@import "partials/product_info";
+@import "partials/admin_category";
+@import "partials/admin_products";
+@import "partials/admin_orders";
+@import "partials/order";
+@import "partials/order_page";
+@import "partials/second_header_extern";
+@import "partials/order-confirmation";
+
+/*ok att nedan ligger här eller kan vi lägga det ngn
+annanstans så att det fortfarande är med överallt?*/

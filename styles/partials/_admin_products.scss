@@ -1,0 +1,203 @@
+//styling för mobil
+@media (max-width: 500px) {
+  .product-head {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  .table_container {
+    min-width: 280px;
+    @media (min-width: 600px) {
+      min-width: 400px;
+    }
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  th {
+    padding: 2%;
+    font-size: 18px;
+    @media (min-width: 1000px) {
+      font-size: 36px;
+    }
+  }
+
+  tr {
+    margin: 0 0 1rem 0;
+    padding: 5px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+  }
+
+  tr:nth-child(odd) {
+    background: rgb(235, 235, 235);
+  }
+
+  td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  td:before {
+    position: absolute;
+    top: 0;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  .table_products-cell:nth-of-type(1):before {
+    content: "Produkt";
+    padding: 5%;
+    font-weight: 700;
+  }
+  .table_products-cell:nth-of-type(2):before {
+    content: "Kategori";
+    padding: 5%;
+    font-weight: 700;
+  }
+  .table_products-cell:nth-of-type(3):before {
+    content: "Redigera";
+    padding: 5%;
+    font-weight: 700;
+  }
+
+  .btn_update-product {
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    background: peachpuff;
+    text-transform: uppercase;
+  }
+
+  .btn_delete-product {
+    padding: 5px 10px;
+    font-size: 13px;
+    background: #ffe4e1;
+    text-transform: uppercase;
+  }
+
+  .btn_update-product,
+  .btn_delete-product a {
+    color: #212121;
+  }
+  .back_btn,
+  .btn-add-product {
+    background: peachpuff;
+    text-transform: uppercase;
+  }
+}
+
+// Styling för desktop
+@media (min-width: 500px) {
+  .table_products {
+    min-width: 650px;
+    margin-bottom: 5%;
+    @media (min-width: 800px) {
+      min-width: 800px;
+    }
+  }
+  .product-head {
+    font-size: 46px;
+    text-align: center;
+    padding: 0 10% 10% 10%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .table_products-head {
+    font-size: 34px;
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+
+  tr {
+    padding: 5%;
+  }
+
+  td {
+    width: 200px;
+    font-size: 18px;
+    padding: 2%;
+  }
+  .table_products-head {
+    padding-right: 30px;
+  }
+
+  .btn_update-product,
+  .btn_delete-product {
+    margin-left: 15px;
+    background: peachpuff;
+    text-transform: uppercase;
+    @media (min-width: 700px) {
+      margin-left: 0;
+    }
+    @media (min-width: 800px) {
+      margin-left: 15px;
+    }
+  }
+
+  .btn_delete-product {
+    background: #ffe4e1;
+  }
+  .btn_delete-product a {
+    color: #212121;
+  }
+
+  tr:nth-child(odd) {
+    background: rgb(235, 235, 235);
+  }
+  .product_img-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+  }
+  .product_img-wrapper {
+    margin: 0 10px 0 10px;
+  }
+
+  .product_img-head {
+    text-align: center;
+    font-size: 36px;
+  }
+
+  .back_btn,
+  .btn-add-product {
+    background: peachpuff;
+    text-transform: uppercase;
+  }
+}
+
+.btn_delete-img {
+  background-color: #852db8;
+  text-transform: uppercase;
+  color: white;
+  transition: all 300ms ease;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.btn_delete-img:hover {
+  background-color: #b852f4;
+  text-transform: uppercase;
+  color: white;
+}

@@ -1,0 +1,136 @@
+.order-confirmation-page {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: 800px){
+        max-width: 95%;
+        margin-left: 2%;
+    }
+    @media (max-width: 500px){
+        margin-left: 0%;
+        align-items: unset;
+    }
+    
+}
+.order-confirmation-heading{
+    padding-bottom: 1%;
+    @media (max-width: 800px){
+    margin-left: 5%;
+    }
+    @media (max-width: 500px){
+        margin-left: 0;
+        align-self: center;
+        }
+}
+.order-confirmation-text{
+    padding-bottom: 1%;
+    @media (max-width: 800px){
+        margin-left: 5%;
+        }
+    @media (max-width: 500px){
+        margin-left: 0;
+        align-self: center;
+        }
+}
+// .table_orders-container {
+//     width: 70%;
+// }
+.table_orders-row{
+    margin-right: 2%;
+    margin-left: 2%;
+    @media (max-width: 500px){
+        margin-left: 0;
+    }
+}
+.conf-cell {
+    border-bottom: 1px solid #ebebeb;
+    @media (max-width: 800px){
+    font-size: 12px;
+    }
+}
+.table_orders-head-row {
+
+    @media (max-width: 500px){
+        display: none;
+    }
+    @media (max-width: 800px){
+        font-size: 24;
+    }
+}
+.table_orders-head-text {
+    font-size: 34px;
+    padding: 1%;
+    @media (max-width: 800px){
+        font-size: 20px;
+    }
+}
+.table_orders-head-text:nth-of-type(1) {
+    @media (max-width: 800px){
+        width: 15%;
+    }
+}
+.conf-cell:nth-of-type(1) {
+    border-left: 1px solid #ebebeb;
+    @media (max-width: 500px){
+        border-left: none;
+    }
+}
+.conf-cell:nth-of-type(1):before {
+    @media (max-width: 500px){
+    content: "Orderid";
+    padding: 5%;
+    font-weight: 700;
+    float: left;
+  }
+}
+  .conf-cell:nth-of-type(2):before {
+    @media (max-width: 500px){
+    content: "Orderdatum";
+    padding: 5%;
+    font-weight: 700;
+  }
+}
+  .conf-cell:nth-of-type(3):before {
+    width: 25%;
+    @media (max-width: 500px){
+    content: "Kunduppgifter";
+    padding: 5%;
+    font-weight: 700;
+    }
+  }
+  
+  .conf-cell:nth-of-type(4)::before {
+    @media (max-width: 500px){
+    content: "Produkter";
+    padding: 5%;
+    font-weight: 700;
+    width: 100%
+  }
+}
+.conf-cell:nth-of-type(5) {
+    border-right: 1px solid #ebebeb;
+    @media (max-width: 500px){
+        border-right: none;
+    }
+}
+  .conf-cell:nth-of-type(5)::before {
+    @media (max-width: 500px){
+    content: "Summa";
+    padding: 5%;
+    font-weight: 700;
+    }
+  }
+//   .email-style {
+//       font-size: 12px;
+//   }
+#print-order-btn {
+    margin-top: 2%;
+    width: 200px;
+    @media (max-width: 800px){
+        margin-top: 5%;
+    }
+    @media (max-width: 500px){
+        align-self: center;
+        }
+}

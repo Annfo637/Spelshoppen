@@ -1,0 +1,60 @@
+@mixin menu-wraper {
+	display: flex;
+	min-height: 104px;
+	background: #3d085c;
+	flex-direction: column;
+	place-content: center center;
+	place-items: center center;
+	transition: linear 300ms;
+
+
+  @media (min-width: 500px) {
+    // min-height: 100px;
+    // flex-direction: row;
+    // justify-content: flex-end;
+    // align-items: center;
+  }
+}
+
+@mixin menu-link-style {
+  font-size: 16px;
+  color: rgb(31, 31, 31);
+  text-decoration: none;
+  font-family: $font-nav;
+  letter-spacing: 1.5px;
+}
+
+@mixin image-sizing {
+  height: 100%;
+  width: 100%;
+  img {
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@mixin gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 600px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@mixin gallery-card {
+  margin: 2em;
+  background-color: lightgrey;
+  text-align: center;
+  height: 200px;
+  width: 200px;
+}

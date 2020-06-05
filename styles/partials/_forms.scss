@@ -1,0 +1,150 @@
+.page-title {
+  font-size: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 5%;
+
+  @media (min-width: 500px) {
+    font-size: 36px;
+  }
+}
+.form-container {
+  font-family: "Kulim Park", sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffe4e1;
+  margin-bottom: 10%;
+  padding: 8%;
+  border-radius: 5px;
+
+  @media (min-width: 600px) {
+    min-width: 600px;
+  }
+  @media (min-width: 1000px) {
+    padding: 5%;
+    min-width: 800px;
+  }
+  &__heading {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+
+    @media (min-width: 500px) {
+      font-size: 24px;
+    }
+  }
+  &__box {
+    width: 100%;
+    padding-top: 15px;
+    @media (min-width: 600px) {
+      width: 100%;
+      padding-bottom: 1rem;
+    }
+  }
+  &__box-input {
+    margin-top: 1rem;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    padding: 5px;
+    font-size: 14px;
+    margin-top: 5px;
+    @media (min-width: 500px) {
+      margin-top: 1rem;
+      width: 40%;
+    }
+  }
+  &__submit {
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  &__submit-button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #852db8;
+    text-transform: uppercase;
+    color: white;
+    transition: all 300ms ease;
+    cursor: pointer;
+
+    &:hover {
+      @media (min-width: 770px) {
+        background-color: #b852f4;
+        text-transform: uppercase;
+        color: white;
+      }
+    }
+  }
+  &__image {
+    width: 100%;
+    margin-top: 1rem;
+    padding-top: 15px;
+    @media (min-width: 600px) {
+      width: 70%;
+    }
+    @media (min-width: 1000px) {
+      width: 40%;
+    }
+    &-input {
+      width: 100%;
+      margin-top: 1rem;
+      background-color: white;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 5px;
+      @media (min-width: 500px) {
+        margin-top: 1rem;
+      }
+    }
+  }
+  &__description {
+    width: 100%;
+    padding-top: 25px;
+
+    &-input {
+      width: 100%;
+      height: 200px;
+      border: solid 1px rgb(28, 28, 28);
+      border-radius: 3px;
+      font-size: 16px;
+      padding: 10px;
+      margin-top: 5px;
+      @media (min-width: 500px) {
+        margin-top: 1rem;
+        width: 70%;
+      }
+    }
+  }
+}
+
+.error {
+  color: red;
+  padding: 1%;
+}
+
+label {
+  font-size: 16px;
+  margin-top: 20px;
+  @media (min-width: 500px) {
+    font-size: 18px;
+  }
+}
+
+.update_category-box {
+  width: 80%;
+}
+
+.nameValidationText,
+.emailValidationText,
+.phoneValidationText,
+.streetValidationText,
+.zipcodeValidationText,
+.cityValidationText {
+  color: red;
+  font-weight: bolder;
+}
